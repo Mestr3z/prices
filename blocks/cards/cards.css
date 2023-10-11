@@ -1,0 +1,14 @@
+.cards{
+    margin-left: 40px;
+    background-color: #FFF;
+    max-width: 950px;
+    padding-top: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    text-align: left;
+    overflow-y: hidden;
+    width: 100%;
+    overflow-x: scroll;
+}

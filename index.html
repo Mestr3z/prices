@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Uniport</title>
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <a class="header__logo_link">
+                    <img class="header__logo" src="images/logo.svg" alt="логотип компании">
+                    <img class="header__logo_name" src="./images/logo 2.svg" alt="изображение часов">
+                </a>
+                <div class="flexx">
+                <div class="header__menu">
+                    <img class="logos" src="./images/time.svg" alt="изображение часов">
+                    <div class="header__menu_works">
+                        <p class="text">Время работы</p>
+                        <p class="text">Круглосуточно</p>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <img class="logos" src="./images/location.svg" alt="изображение метки локации">
+                    <div class="header__menu_works">
+                        <p class="text">Адрес</p>
+                        <p class="text">Санкт-Петербург</p>
+                    </div>
+                </div>
+                <div class="header__icons">
+                    <img class="header__icons_img icn" src="./images/message.svg" alt="иконка почты">
+                    <img class="header__icons_img" src="./images/telegram.svg" alt="логотип telegram">
+                    <img class="header__icons_img" src="./images/whatsapp.svg" alt="логотип whatsapp">
+                </div>
+                <div class="header__contacts">
+                    <a href="#" class="header__contacts_number">+# (###) ###-##-##</a>
+                    <a href="#" class="header__contacts_mail">####@########.##</a>
+                </div>
+                <a href="#" class="header__cart">
+                    <img class="header__cart_logo" src="./images/shopping-cart.svg"
+                        alt="изображение продуктовой корзины">
+                    <div class="header__cart_list">
+                        <p class="header__cart_list_name">Корзина</p>
+                        <p class="header__cart_list_items">1<span class="header__cart_list_items_text"> товар</span></p>
+                        <p class="header__cart_list_cost">7 650 <span
+                                class="header__cart_list_cost_currency">руб.</span></p>
+                    </div>
+                </a>
+                <div class="header__burger" onclick="toggleMenu()">
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="menu">
+                <div class="menu__list">
+                    <div class="menu__item">
+                        <p class="menu__text menu__first-list">ПРОДУКЦИЯ <img class="menu__down" src="./images/down.png"
+                                alt="иконка развертывания списка"> </p>
+                        <ul class="submenu submenu__first-list">
+                            <li class="submenu__li">Газобетон D-300</li>
+                            <li class="submenu__li">Газобетон D-400</li>
+                            <li class="submenu__li">Газобетон D-500</li>
+                            <li class="submenu__li">Газобетон D-600</li>
+                            <li class="submenu__li">Газобетон D-700</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">КАЛЬКУЛЯТОР</a>
+                    <a href="#" class="menu__link">ЦЕНЫ</a>
+                    <a href="#" class="menu__link">ДОСТАВКА И ОПЛАТА</a>
+                    <a href="#" class="menu__link">БЛОГ</a>
+                    <div class="menu__item">
+                        <p class="menu__text menu__second-list">О КОМПАНИИ <img class="menu__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></p>
+                        <ul class="submenu submenu__second-list">
+                            <li class="submenu__li">О производстве</li>
+                            <li class="submenu__li">Реквизиты</li>
+                            <li class="submenu__li">Партнеры</li>
+                            <li class="submenu__li">Документы</li>
+                            <li class="submenu__li">Вакансии</li>
+                            <li class="submenu__li">Сотрудничество</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">ЧАСТЫЕ ВОПРОСЫ</a>
+                    <a href="#" class="menu__link">КОНТАКТЫ</a>
+                    <button class="menu__button" id="menuButton">ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+            </section>
+            <section class="mainpage">
+                <section class="headers">
+                    <h2 class="headers__name">Цены на газобетон</h2>
+                    <div class="headers__choose">
+                        <a href="#" class="headers__choose_main">Главная</a>
+                        <p class="headers__choose_slash">/</p>
+                        <a href="#" class="headers__choose_inactive">Цены на газобетон</a>
+                    </div>
+                </section>
+                <section class="catalog">
+                    <div class="column">
+                        <ul class="catalog__choice">
+                            <li class="catalog__choice_li">
+                                <p href="#" class="catalog__choice_li_link">Меню</p>
+                            </li>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Продукция</a>
+                            </li>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Калькулятор</a>
+                            </li>
+                            <li class="catalog__choice_li catalog__choice_leftside"><a href="#"
+                                    class="catalog__choice_li_link">Цены</a></li>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Доставка и
+                                    оплата</a></li>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Блог</a></li>
+                            <ul class="catalog__choice_sidemenu"><a href="#" class="catalog__choice_li_link">О
+                                    компании</a>
+                                <li class="catalog__choice_p"><a href="#" class="catalog__choice_li_link">О производстве
+                                </li>
+                                <li class="catalog__choice_p"><a href="#" class="catalog__choice_li_link">Реквизиты</a>
+                                </li>
+                                <li class="catalog__choice_p"><a href="#" class="catalog__choice_li_link">Партнеры</a>
+                                </li>
+                                <li class="catalog__choice_p"><a href="#" class="catalog__choice_li_link">Документы</a>
+                                </li>
+                                <li class="catalog__choice_p"><a href="#" class="catalog__choice_li_link">Вакансии</a>
+                                </li>
+                                <li class="catalog__choice_p"><a href="#"
+                                        class="catalog__choice_li_link">Сотрудничество</a></li>
+                            </ul>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Частые
+                                    вопросы</a></li>
+                            <li class="catalog__choice_li"><a href="#" class="catalog__choice_li_link">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <section class="cards">
+                        <p class="cards__title">Цены со склада в Санкт-Петербурге</p>
+                        <p class="cards__text">Строить с помощью современных материалов – одно удовольствие. Благодаря современным
+                            технологическим процессам производство строительных элементов поражает разнообразием и радует простоте и легкости в
+                            работе.</p>
+                            <div class="scroll__table">
+                            <div class="scroll__table">
+                        <table class="info_table_2">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2">Наименование</th>
+                                    <th rowspan="2">Размер (Д*Ш*В)</th>
+                                    <th rowspan="2" >Кол-во на поддоне, шт.</th>
+                                    <th rowspan="2">Вес одного поддона, кг *</th>
+                                    <th rowspan="2">Кол-во кубов на поддоне</th>
+                                    <th colspan="2">Цена за объем до 50 м<sup>3</sup>, руб.</th>
+                                    <th colspan="2">Цена за объем от 50 м<sup>3</sup>, руб.</th>
+                                    <th rowspan="2" ></th>
+                                </tr>
+                                <tr>
+                                    <th>за 1 м<sup>3</sup></th>
+                                    <th>за поддон**</th>
+                                    <th>за 1 м<sup>3</sup></th>
+                                    <th>за поддон**</th>
+                                </tr>
+                                <tr>
+                                    <td class="table__title" rowspan="4">D500 * B2,5(M35)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td>6 900</td>
+                                    <td>10 600</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td>6 900</td>
+                                    <td>10 600</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td>6 900</td>
+                                    <td>10 600</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td>6 950</td>
+                                    <td>10 600</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__title" rowspan="4" >D500 * B3,5(M50)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td>7 050</td>
+                                    <td>10 750</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td>7 050</td>
+                                    <td>10 750</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td>7 050</td>
+                                    <td>10 750</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td>7 050</td>
+                                    <td>10 750</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="table__title">D600 * B3,5(M50)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 100</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 100</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 100</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 100</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  class="table__title" rowspan="4">D500 * B2,5(M35)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 000</td>
+                                    <td>10 750</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>7 000</td>
+                                    <td>10 750</td>
+                                    <td>6 950</td>
+                                    <td>10 675</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>6 950</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>6 950</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="table__title">D600 * B3,5(M50)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="table__title">D500 * B2,5(M35)</td>
+                                    <td>625*200*250</td>
+                                    <td>48</td>
+                                    <td>1000</td>
+                                    <td>1,5</td>
+                                    <td>8 300</td>
+                                    <td>12 700</td>
+                                    <td>7 050</td>
+                                    <td>12 625</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*240*250</td>
+                                    <td>40</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*300*250</td>
+                                    <td>32</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>625*400*250</td>
+                                    <td>24</td>
+                                    <td>1200</td>
+                                    <td>1,5</td>
+                                    <td>7 100</td>
+                                    <td>10 900</td>
+                                    <td>7 050</td>
+                                    <td>10 825</td>
+                                    <td><a href="#" class="js-order_product" data-modal="order_product" href="javascript:;"
+                                            style="color: #F9AF19">Заказать</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                            <p class="cards__text">Строить с помощью современных материалов – одно удовольствие. Благодаря современным
+                                технологическим процессам производство строительных элементов поражает разнообразием и радует простоте и легкости в
+                                работе.</p>
+                            </section>
+                            </section>
+                            </div>
+                            </section>
+    </main>
+    <footer class="footer">
+        <section class="info">
+            <div class="column__product">
+                <h3 class="column__header">Продукция <img class="footer__down"
+                    src="./images/down.png" alt="иконка развертывания списка"></h3>
+                <ul class="column__products">
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Газобетон D-300</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Газобетон D-300</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Газобетон D-300</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Газобетон D-300</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Газобетон D-300</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">U-блоки</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Армированые перемычки</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Некондиция</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Инструменты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="column__about">
+                <h3 class="column__header">О компании <img class="footer__down"
+                    src="./images/down.png" alt="иконка развертывания списка"></h3>
+                <ul class="column__products">
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">О производстве</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Реквизиты</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Партнеры</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Документы</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Вакансии</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Сотрудничество</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="column__info">
+                <h3 class="column__header">Полезная информация <img class="footer__down"
+                    src="./images/down.png" alt="иконка развертывания списка"></h3>
+                <ul class="column__products">
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Калькулятор</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Цены</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Доставка и оплата</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Блог</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Новости</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Частые вопросы</li>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <li class="column__products_list">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="column__company">
+                <a href="#" class="column__company_logos">
+                    <img src="./images/logo.svg" alt="логотип компании" class="column__company_image">
+                    <img src="./images/logo 2.svg" alt="название компании"
+                        class="column__company_secondimage footer-image2">
+                </a>
+                <div class="column__company_contacts">
+                    <div class="column__company_contacts-left">
+                        <p class="column__company_text">Телефон:</p>
+                        <p class="column__company_text">Почта:</p>
+                        <p class="column__company_text">Режим:</p>
+                        <p class="column__company_text">Адрес:</p>
+                    </div>
+                    <div class="column__company_contacts-right">
+                        <a href="#" class="column__company_link">+7 (921) 998-59-85</a>
+                        <a href="#" class="column__company_link">####@########.##</a>
+                        <p class="column__company_textright">Круглосуточно</p>
+                        <p class="column__company_textright">Санкт-Петербург</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer__credits">
+            <div class="footer__credits_text">
+                <p class="footer__credits_text-save">© 2023. Все права защищены.</p>
+                <a href="#" class="footer__credits_text-personaldata">Политика обработки персональных данных</a>
+            </div>
+        </section>
+    </footer>
+        </div>
+        <script src="./script.js"></script>
+</body>
